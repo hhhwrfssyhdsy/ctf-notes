@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pwn/专项杂记/常用gadget总结.md",
+                "file": "pwn/专项杂记/一些技巧？.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "常用gadget总结"
+              "title": "一些技巧？"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pwn/专项杂记/常用gadget总结.md",
+                "file": "pwn/专项杂记/一些技巧？.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "常用gadget总结 的反向链接列表"
+              "title": "一些技巧？ 的反向链接列表"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pwn/专项杂记/常用gadget总结.md",
+                "file": "pwn/专项杂记/一些技巧？.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "常用gadget总结 的出链列表"
+              "title": "一些技巧？ 的出链列表"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pwn/专项杂记/常用gadget总结.md",
+                "file": "pwn/专项杂记/一些技巧？.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "常用gadget总结 的大纲"
+              "title": "一些技巧？ 的大纲"
             }
           },
           {
@@ -195,7 +195,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -210,8 +210,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f6758fe85fb1ea8f",
+  "active": "3f2cef530a90ba96",
   "lastOpenFiles": [
+    "pwn/专项杂记/一些概念？.md",
+    "pwn/专项杂记/一些技巧？.md",
     "pwn/Linux/用户态/Exploitation/ROP相关/ret2csu总结.md",
     "pwn/专项杂记/常用gadget总结.md",
     "pwn/专项杂记",
