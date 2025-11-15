@@ -89,3 +89,14 @@ rdx = 0           ; 第三个参数：envp
 syscall           ; 执行系统调用
 
 ```
+
+**注意**: 不要混淆`system`和`systemcall`,
+`system()` 是 libc（glibc）提供的普通函数，其作用是：
+`system(const char *cmd)`
+内部会做：
+1. fork()
+2. execve("/bin/sh", ["sh", "-c", cmd])
+3. 等待子进程结束
+
+它是 **复杂的高级 API**。
+`systemcall`如上为系统内核级调用.
