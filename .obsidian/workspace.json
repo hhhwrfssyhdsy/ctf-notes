@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pwn/专项杂记/常用gadget总结.md",
+                "file": "pwn/杂题总结/栈溢出相关/BUFFCTF jarvisoj_level2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "常用gadget总结"
+              "title": "BUFFCTF jarvisoj_level2"
             }
           }
         ],
@@ -213,11 +213,12 @@
   "active": "3f2cef530a90ba96",
   "lastOpenFiles": [
     "pwn/杂题总结/栈溢出相关/BUUCTF pwn1_sctf_2016 1.md",
+    "pwn/杂题总结/栈溢出相关/BUFFCTF jarvisoj_level2.md",
+    "pwn/专项杂记/常用gadget总结.md",
     "pwn/专项杂记/一些技巧？.md",
     "pwn/杂题总结/栈溢出相关",
     "pwn/杂题总结",
     "pwn/专项杂记/一些概念？.md",
-    "pwn/专项杂记/常用gadget总结.md",
     "pwn/Linux/用户态/Exploitation/格式化字符串/格式化字符串漏洞总结.md",
     "pwn/Linux/用户态/Exploitation/格式化字符串/习题总结.md",
     "pwn/Linux/用户态/Exploitation/整数溢出/整数溢出.md",
