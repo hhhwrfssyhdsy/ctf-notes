@@ -59,8 +59,22 @@ payload += p64(sys_addr)      # 跳 system()
 
 另外:
 payload 写入的顺序 = 栈上的顺序（从低地址到高地址）
-**程序执行 ret 时，从“栈顶”（最高地址部分）依次取 ROP 链的内容。**
+**程序执行 ret 时，从“栈顶”（最低地址部分）依次取 ROP 链的内容。**
 
-也就是说：
 
-`payload 的前面部分 → 在栈底（低地址） payload 的后面部分 → 在栈顶（高地址） → ret 会从这里开始执行`
+栈布局如下
+```
+高地址(栈底)
+sys_addr
+bin_bash addr
+pop_rdi_ret addr
+saved rbp    --paddings
+buffer       --paddings
+低地址(栈顶)
+```
+
+main函数`ret`后即将`pop_rdi_ret addr`从栈顶取出存入寄存器`rip`,接着程序执行流跳到`pop rdi;ret`,接下来将`/bin/bash`字符串从栈顶取出放入`rdi`寄存器,再次执行`ret`即`pop rip`将`system`的地址存入`rip`,程序将开始执行`system`.
+
+
+
+对于32位程序则其函数直接从栈上取参数,无需找`pop rdi`.
