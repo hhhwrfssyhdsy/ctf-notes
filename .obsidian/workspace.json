@@ -195,16 +195,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aed4ae29577451a8",
+  "active": "259dd19e6b752092",
   "lastOpenFiles": [
-    "pwn/Linux/用户态/Exploitation/ROP相关/ret2csu总结.md",
+    "pwn/专项杂记/一些概念？.md",
     "pwn/杂题总结/栈溢出相关/BUUCTF OGeek2019 babyrop.md",
+    "pwn/Linux/用户态/Exploitation/ROP相关/ret2libc总结.md",
+    "pwn/Linux/用户态/Exploitation/ROP相关/ret2csu总结.md",
     "pwn/杂题总结/栈溢出相关/BUUCTF pwn1_sctf_2016 1.md",
     "pwn/杂题总结/栈溢出相关/BUUCTF get_started_3dsctf_2016.md",
     "pwn/杂题总结/栈溢出相关/BUUCTF jarvisoj_level2.md",
     "BUUCTF OGeek2019 babyrop.md",
     "未命名.canvas",
-    "pwn/专项杂记/一些概念？.md",
     "pwn/杂题总结/栈溢出相关/BUUCTF HarekazeCTF2019 baby_rop.md",
     "Pasted image 20251120102214.png",
     "Pasted image 20251120101625.png",
@@ -220,7 +221,6 @@
     "pwn/Linux/用户态/Exploitation/整数溢出",
     "pwn/Linux/用户态/Exploitation/格式化字符串",
     "未命名",
-    "pwn/Linux/用户态/Exploitation/ROP相关/ret2libc总结.md",
     "Pasted image 20251114092854.png",
     "Pasted image 20251114092949.png",
     "Pasted image 20251114084413.png",
