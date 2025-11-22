@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rev/算法逆向/常见的加密算法和编码识别.md",
+                "file": "pwn/专项杂记/一些技巧？.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "常见的加密算法和编码识别"
+              "title": "一些技巧？"
             }
           }
         ]
@@ -197,26 +197,26 @@
   },
   "active": "259dd19e6b752092",
   "lastOpenFiles": [
+    "pwn/杂题总结/栈溢出相关/BUUCTF get_started_3dsctf_2016.md",
+    "pwn/杂题总结/栈溢出相关/BUUCTF HarekazeCTF2019 baby_rop.md",
+    "pwn/杂题总结/栈溢出相关/BUUCTF jarvisoj_level2.md",
+    "pwn/杂题总结/栈溢出相关/BUUCTF OGeek2019 babyrop.md",
+    "pwn/专项杂记/一些概念？.md",
+    "pwn/Linux/用户态/Exploitation/ROP相关/栈迁移总结.md",
+    "pwn/Linux/用户态/Exploitation/ROP相关/ret2csu总结.md",
     "pwn/Linux/用户态/Exploitation/ROP相关/ret2libc总结.md",
+    "pwn/杂题总结/栈溢出相关/BUUCTF pwn1_sctf_2016 1.md",
     "rev/算法逆向/常见的加密算法和编码识别.md",
     "rev/算法逆向",
     "rev/杂题总结",
     "rev",
-    "pwn/专项杂记/一些概念？.md",
-    "pwn/杂题总结/栈溢出相关/BUUCTF OGeek2019 babyrop.md",
-    "pwn/Linux/用户态/Exploitation/ROP相关/ret2csu总结.md",
-    "pwn/杂题总结/栈溢出相关/BUUCTF pwn1_sctf_2016 1.md",
-    "pwn/杂题总结/栈溢出相关/BUUCTF get_started_3dsctf_2016.md",
-    "pwn/杂题总结/栈溢出相关/BUUCTF jarvisoj_level2.md",
     "BUUCTF OGeek2019 babyrop.md",
     "未命名.canvas",
-    "pwn/杂题总结/栈溢出相关/BUUCTF HarekazeCTF2019 baby_rop.md",
     "Pasted image 20251120102214.png",
     "Pasted image 20251120101625.png",
     "pwn/Linux/用户态/Exploitation/格式化字符串/格式化字符串漏洞总结.md",
     "pwn/专项杂记/常用gadget总结.md",
     "pwn/沙箱逃逸/orw总结.md",
-    "pwn/Linux/用户态/Exploitation/ROP相关/栈迁移总结.md",
     "pwn/Linux/用户态/Exploitation/格式化字符串/习题总结.md",
     "pwn/专项杂记/一些技巧？.md",
     "pwn/杂题总结/栈溢出相关",
