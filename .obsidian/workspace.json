@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pwn/Linux/用户态/Exploitation/ROP相关/ret2libc总结.md",
+                "file": "rev/算法逆向/常见的加密算法和编码识别.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ret2libc总结"
+              "title": "常见的加密算法和编码识别"
             }
           }
         ]
@@ -197,9 +197,13 @@
   },
   "active": "259dd19e6b752092",
   "lastOpenFiles": [
+    "pwn/Linux/用户态/Exploitation/ROP相关/ret2libc总结.md",
+    "rev/算法逆向/常见的加密算法和编码识别.md",
+    "rev/算法逆向",
+    "rev/杂题总结",
+    "rev",
     "pwn/专项杂记/一些概念？.md",
     "pwn/杂题总结/栈溢出相关/BUUCTF OGeek2019 babyrop.md",
-    "pwn/Linux/用户态/Exploitation/ROP相关/ret2libc总结.md",
     "pwn/Linux/用户态/Exploitation/ROP相关/ret2csu总结.md",
     "pwn/杂题总结/栈溢出相关/BUUCTF pwn1_sctf_2016 1.md",
     "pwn/杂题总结/栈溢出相关/BUUCTF get_started_3dsctf_2016.md",
@@ -220,15 +224,12 @@
     "pwn/Linux/用户态/Exploitation/整数溢出/整数溢出.md",
     "pwn/Linux/用户态/Exploitation/整数溢出",
     "pwn/Linux/用户态/Exploitation/格式化字符串",
-    "未命名",
     "Pasted image 20251114092854.png",
     "Pasted image 20251114092949.png",
     "Pasted image 20251114084413.png",
     "pwn/专项杂记",
     "pwn/沙箱逃逸",
     "pwn",
-    "pwn/Linux",
-    "pwn/Windows",
     "欢迎.md"
   ]
 }
